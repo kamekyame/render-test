@@ -61,6 +61,7 @@ router.get("/ws", (ctx) => {
       }
     }, 1000);
   }
+  ctx.response.status = 200;
 });
 
 app.use(router.routes());
